@@ -1,0 +1,41 @@
+﻿<div class="row">
+	<div class="col-md-10 col-sm-10 col-xs-10 form-group" role="group">
+	 <h3>    <span style="color:green" class='glyphicon glyphicon-chevron-left'></span>   {{ timesheetDetail?.Displydate}} <span style="color:green"  class='glyphicon glyphicon-chevron-right'></span> </h3>
+       <span class="pull-right glyphicon-align-center">Employee  :{{ timesheetDetail?.EmpName}} </span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10 col-sm-10 col-xs-10 form-group">
+        <table class="table-bordered table">
+            <thead>
+                <tr><th>Project Name</th>
+                    <th *ngFor="let tsh of timesheetDetail.DayTasks">{{tsh?.Date}} {{tsh?.DayName}}</th>  
+                    <th>Total Hours</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <!--  <td *ngFor="let tsd of timesheetDetail.DayTasks">{{tsd?.Dayhrs}}</td><!--  <td *ngFor="let tsd of timesheetDetail.DayTasks">{{tsd?.Dayhrs}}</td>-->
+                    <td>{{ timesheetDetail.DayTasks[0].Project}}</td>
+                   <td *ngFor="let tsd of timesheetDetail.DayTasks"><input type="text" style="width:40px;"  id="{{tsd?.Date}}-{{tsd?.Project}}" name="{{tsd?.Date}}{{tsd?.Project}}" [(ngModel)]="tsd.Dayhrs"></td>
+                   
+                    <td></td>
+
+                </tr>
+            </tbody>            
+         </table>
+        <div>
+            <button type="button"class="btn btn-group-sm">
+                <i class="icon-user icon-white"></i> Add Project/Task
+            </button>
+            <button type="submit" class="btn btn-primary">
+                <i class="icon-user icon-white"></i>Save as Draft
+            </button>
+            <button type="submit" class="btn btn-primary">
+                <i class="icon-user icon-white"></i>Submit
+            </button>
+        </div>
+    </div>
+
+</div>
