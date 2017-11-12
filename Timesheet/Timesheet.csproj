@@ -25,6 +25,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TimesheetData\TimesheetData.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TimesheetData">
+      <HintPath>..\TimesheetData\bin\Debug\TimesheetData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\components\taskmaster\taskmaster.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\clientmaster\clientmaster.component.ts" />
   </ItemGroup>

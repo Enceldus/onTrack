@@ -1,0 +1,11 @@
+C:\DevDH\Timesheet\TimesheetData\obj\Debug\TimesheetData.csprojResolveAssemblyReference.cache
+C:\DevDH\Timesheet\TimesheetData\obj\Debug\TimesheetData.csproj.CoreCompileInputs.cache
+C:\DevDH\Timesheet\TimesheetData\bin\Debug\TimesheetData.dll.config
+C:\DevDH\Timesheet\TimesheetData\bin\Debug\TimesheetData.dll
+C:\DevDH\Timesheet\TimesheetData\bin\Debug\TimesheetData.pdb
+C:\DevDH\Timesheet\TimesheetData\bin\Debug\EntityFramework.dll
+C:\DevDH\Timesheet\TimesheetData\bin\Debug\EntityFramework.SqlServer.dll
+C:\DevDH\Timesheet\TimesheetData\bin\Debug\EntityFramework.xml
+C:\DevDH\Timesheet\TimesheetData\bin\Debug\EntityFramework.SqlServer.xml
+C:\DevDH\Timesheet\TimesheetData\obj\Debug\TimesheetData.dll
+C:\DevDH\Timesheet\TimesheetData\obj\Debug\TimesheetData.pdb
