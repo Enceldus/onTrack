@@ -11,10 +11,10 @@ namespace TimesheetData.Models
 {
   public  class ProjectAndUserMapping : CommonBaseModel
     {
-        [ForeignKey("ProjectsMap")]
+        [ForeignKey("Projects")]
         public long? Project_ID { get; set; }
         public virtual Projects Projects { get; set; }
-        [ForeignKey("UsersMap")]
+        [ForeignKey("Users")]
         public long? User_ID { get; set; }
         public virtual Users Users { get; set; }
         public bool Add(out bool DBException_)

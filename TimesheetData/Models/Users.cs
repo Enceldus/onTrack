@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 
 namespace TimesheetData.Models
 {
     public class Users : CommonBaseModel
-    {
+    {        
         public string FullName{ get; set; }
         public string EmailID { get; set; }
-        [ForeignKey("LookupItems")]
         public long RoleIDLookupID { get; set; }
-        public virtual LookupItems Clients { get; set; }
         public bool isSuperAdmin { get; set; }
         public bool isApprover { get; set; }
         public bool isActive { get; set; }

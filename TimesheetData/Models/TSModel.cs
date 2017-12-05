@@ -15,11 +15,12 @@ namespace TimesheetData.Models
         public virtual DbSet<LookupItems> LookupItems { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<ProjectAndUserMapping> ProjectAndUserMapping { get; set; }
-    
+		public virtual DbSet<TimeTracker> TimeTracker { get; set; }
+		public virtual DbSet<TimeTrackerDetail> TimeTrackerDetail { get; set; }
 
 
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+		protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Properties<string>()
             .Configure(s => s.HasMaxLength(255).HasColumnType("varchar"));
